@@ -22,6 +22,7 @@
 :root {
     --site-font: "Roboto", "Arial", sans-serif;
     --brand-color: #ea625e;
+    --brand-color-hover: #c9541c;
     --text-color: #333;
     --seven-color: #777;
     --second-color: #222;
@@ -49,7 +50,41 @@ body {
     line-height: 24px;
     color: var(--text-color);
 }
+/* INFO SECTION STYLES */
+.info-content {
+    width: 100%;
+    max-width: 490px;
+}
+.info-content-title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: var(--black-color);
+    margin-bottom: 30px;
+}
+.info-content-text {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--seven-color);
+    margin-bottom: 30px;
+    padding-left: 37px;
+    border-left: 3px solid #888;
+}
+.info-section-btn {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--white-color);
+    text-decoration: none;
+    background-color: var(--brand-color);
+    text-transform: uppercase;
+    display: inline-block;
+}
+.info-section-btn:hover {
+    background-color: var(--brand-color-hover);
+}
 
+/* SITE CONTAINER STYLES */
 .container {
     width: 100%;
     max-width: 1040px;
@@ -127,4 +162,71 @@ body {
     border-bottom: 1px solid var(--text-color);
     padding-bottom: 5px;
     margin-bottom: -5px;
+}
+.site-header-form {
+    position: relative;
+}
+.site-header-form::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: var(--text-color);
+    position: absolute;
+    bottom: -6px;
+    left: 25%;
+    transition: width .4s ease;
+}
+.site-header-form:hover::after {
+    width: 75%;
+}
+.site-header-form::before {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: var(--text-color);
+    position: absolute;
+    bottom: -6px;
+    right: 25%;
+    transition: width .4s ease;
+}
+.site-header-form:hover::before {
+    width: 75%;
+}
+
+/* SITE MAIN STYLES */
+.site-main {
+    flex-grow: 1;
+}
+/* INTRO SECTION STYLES */
+.intro-section {
+    padding-top: 140px;
+    padding-bottom: 185px;
+    background-image: url(../images/png/watches.png);
+    background-repeat: no-repeat;
+    background-size: 587px 565px;
+    background-position: calc(50% + 538.5px) bottom;
+}
+
+.intro-section-btn {
+    padding: 12px 38.5px;
+}
+
+
+
+
+
+
+
+
+/* SITE BGI @2X */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .intro-section {
+        background-image: url(../images/png/watches@2X.png);
+    }
 }
