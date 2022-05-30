@@ -200,16 +200,139 @@ body {
 /* INTRO SECTION STYLES */
 .intro-section {
     padding-top: 140px;
-    padding-bottom: 185px;
+    padding-bottom: 183px;
     background-image: url(../images/png/watches.png);
     background-repeat: no-repeat;
     background-size: 587px 565px;
     background-position: calc(50% + 538.5px) bottom;
+    border-bottom: 2px solid #ddd;
 }
 
 .intro-section-btn {
     padding: 12px 38.5px;
 }
+
+/* FUTURES SECTION STYLES */
+.futures-section {
+    padding: 70px 0px;
+}
+.futures-section-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.futures-section-item {
+    width: 100%;
+    max-width: 280px;
+}
+.futures-section-item:not(:last-child) {
+    padding-right: 20px;
+    box-sizing: content-box;
+}
+.futures-section-item-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--second-color);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.futures-section-item-text {
+    margin-bottom: 20px;
+}
+.futures-section-item-span {
+    width: 8px;
+    height: 8px;
+    background-color: #ddd;
+    display: inline-block;
+    box-shadow: 18px 0px #ddd,
+    36px 0px #ddd;
+}
+.futures-section-item-link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25.6px;
+    color: var(--brand-color);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.futures-section-item-link::before {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: var(--brand-color);
+    margin-right: 10px;
+    left: 0;
+    transition: width .3s ease;
+}
+
+.futures-section-item-link:hover::before {
+    width: 0px;
+}
+.futures-section-item-link::after {
+    content: "";
+    width: 0px;
+    height: 3px;
+    background-color: var(--brand-color);
+    margin-left: 10px;
+    left: 0;
+    transition: width .3s ease;
+}
+
+.futures-section-item-link:hover::after {
+    width: 40px;
+}
+.futures-section-item-link:hover {
+    font-size: 22px;
+    line-height: 30px;
+    transition: initial .5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
