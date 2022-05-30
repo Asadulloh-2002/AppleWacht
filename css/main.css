@@ -272,6 +272,7 @@ body {
 
 .futures-section-item-link:hover::before {
     width: 0px;
+    color: var(--brand-color-hover);
 }
 .futures-section-item-link::after {
     content: "";
@@ -285,13 +286,53 @@ body {
 
 .futures-section-item-link:hover::after {
     width: 40px;
+    color: var(--brand-color-hover);
 }
 .futures-section-item-link:hover {
     font-size: 22px;
     line-height: 30px;
     transition: initial .5s ease;
+    color: var(--brand-color-hover);
 }
 
+/* BRAND SECTION */
+.barnd-section {
+    padding: 70px 0;
+}
+.brand-container {
+    display: flex;
+    justify-content: space-between;
+}
+.barnd-info {
+    padding: 107px 0;
+}
+.intro-section-btn {
+    padding: 12px 90px;
+}
+.brand-section-img {
+    width: 400px;
+    height: 600px;
+    object-fit: contain;
+}
+
+/* BOTTOM FUTURE */
+
+.bottom-section {
+    background-image: url(../images/jpg/future-bottom.jpg);
+    background-repeat: no-repeat;
+    background-size: 1250px 830px;
+    background-position: top center;
+}
+.bottom-info {
+    padding: 240px 0;
+    margin-left: auto;
+}
+.bottom-title {
+    color: var(--white-color);
+}
+.intro-section-btn {
+    padding: 12px 46px;
+}
 
 
 
@@ -351,5 +392,8 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
     .intro-section {
         background-image: url(../images/png/watches@2X.png);
+    }
+    .barnd-section {
+        background-image: url(../images/jpg/future-bottom@2x.jpg);
     }
 }
